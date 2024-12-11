@@ -1,0 +1,67 @@
+\definecolor{a1}{rgb}{0.44,0.76,0.7}
+\definecolor{a2}{rgb}{0.7,0.86,0.75}
+\definecolor{a3}{rgb}{0.1,0.21,0.4} % text
+\definecolor{a4}{rgb}{0.31,0.56,0.52}
+\definecolor{b}{rgb}{0.98,1,0.89} % background
+\definecolor{lb}{rgb}{0.99,1,0.98}
+\definecolor{a5}{rgb}{1,0.09,0.33} % alert
+\definecolor{a6}{rgb}{0.86,0.25,0.25}
+\definecolor{a7}{rgb}{0.64,0.86,0.8}
+
+\mode<presentation>
+\setbeamercolor{block title}{use=structure,fg=white,bg=a4}
+\setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=a6}
+\setbeamercolor{block title example}{use=example text,fg=white,bg=a1}
+
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!10!bg}
+\setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=block title alerted.bg!10!bg}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!10!bg}
+
+
+\setbeamercolor*{palette primary}{use=structure,fg=white,bg=a1}
+\setbeamercolor*{palette secondary}{use=structure,fg=white,bg=a2}
+\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=a3}
+\setbeamercolor*{palette quaternary}{fg=white,bg=black}
+
+\setbeamercolor*{sidebar}{use=structure,bg=structure.fg}
+  
+\setbeamercolor*{palette sidebar primary}{use=structure,fg=structure.fg!10}
+\setbeamercolor*{palette sidebar secondary}{fg=white}
+\setbeamercolor*{palette sidebar tertiary}{use=structure,fg=structure.fg!50}
+\setbeamercolor*{palette sidebar quaternary}{fg=white}
+
+\setbeamercolor*{titlelike}{parent=palette primary}
+
+\setbeamercolor*{separation line}{}
+\setbeamercolor*{fine separation line}{}
+
+% ---------------------------------------------------------------------------
+% OBJECT COLOURING
+
+\setbeamercolor{frametitle}{bg=a2, fg=black}
+\setbeamercolor{title}{bg=b, fg=black}
+\setbeamercolor{subtitle}{bg=b, fg=a1}
+\setbeamercolor{date}{bg=b, fg=a3}
+\setbeamercolor{website}{bg=b, fg=a1}
+
+
+\setbeamercolor{structure}{fg=a3}
+
+\setbeamercolor{background canvas}{parent=normal text}
+\setbeamercolor{background}{parent=background canvas}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{caption}[numbered]{}
+
+\setbeamercolor{item projected}{bg=a1}
+\setbeamercolor{background canvas}{bg=b}
+
+\setbeamercolor{block title}{bg=a1}
+\setbeamercolor{block body}{bg=lb}
+\setbeamercolor{block title example}{bg=a7}
+\setbeamercolor{block body example}{bg=lb}
+\setbeamercolor{block title alerted}{bg=a5}
+\setbeamercolor{block body alerted}{bg=lb}
+
+\mode
+<all>

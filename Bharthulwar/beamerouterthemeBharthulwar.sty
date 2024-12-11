@@ -1,0 +1,38 @@
+\mode<presentation>
+
+\definecolor{a1}{rgb}{0.44,0.76,0.7}
+
+\setbeamercolor{section in head/foot}{parent=palette quaternary}
+\setbeamercolor{subsection in head/foot}{parent=palette primary}
+
+\setbeamercolor{author in head/foot}{parent=section in head/foot}
+\setbeamercolor{title in head/foot}{parent=subsection in head/foot}
+
+\defbeamertemplate*{headline}{}
+{%
+  \ifnum\insertframenumber>1 % skip first slide
+    \color{a5}\rule{\paperwidth}{2pt}
+    \setbeamercolor{coloredboxstuff}{fg=yellow,bg=a1}
+    \begin{beamercolorbox}
+        [wd=\paperwidth,ht=1.5ex,dp=1.125ex,leftskip=.3cm plus1fill,rightskip=.3cm]{coloredboxstuff} 
+    \end{beamercolorbox}
+  \fi
+}
+
+\defbeamertemplate*{footline}{split theme}
+{%
+    \ifnum\insertframenumber>1 % skip first slide
+        \leavevmode%
+        \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm plus1fill,rightskip=.3cm]{author in head/foot}%
+        \usebeamerfont{author in head/foot}\insertshortauthor
+        \end{beamercolorbox}%
+        \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+        \usebeamerfont{title in head/foot}\insertshorttitle\nobreak\hfill\usebeamercolor[fg]{page number in head/foot}\usebeamerfont{page number in head/foot}\usebeamertemplate{page number in head/foot}
+        \end{beamercolorbox}}%
+      \vskip0pt%
+    \fi
+}
+
+
+\mode
+<all>
